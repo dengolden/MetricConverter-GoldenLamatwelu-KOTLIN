@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="metric converter \n by Golden Lamatwelu"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textFontWeight="700"
+        android:textSize="24dp"
+        android:textColor="@color/white"
+        android:background="@color/teal_200"/>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pilih Metrik:"
+        android:textAllCaps="true"
+        android:textFontWeight="600"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"/>
+
+    <Spinner
+        android:id="@+id/spMetrics"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/metrics"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dari:"
+        android:textAllCaps="true"
+        android:textFontWeight="600"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="10dp"/>
+
+    <Spinner
+        android:id="@+id/spOriginal"
+        android:layout_width="match_parent"
+        android:entries="@array/template"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ke:"
+        android:textAllCaps="true"
+        android:textFontWeight="600"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="10dp"/>
+
+    <Spinner
+        android:id="@+id/spConvert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/template"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"/>
+    
+    <EditText
+        android:id="@+id/getInputValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Input nilai"
+        android:inputType="number"
+        android:layout_marginTop="12dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:ems="8"
+        android:text="Hasil Konversi:"
+        android:textAllCaps="true"
+        android:textFontWeight="700"
+        android:textColor="@color/white"
+        android:background="@color/teal_200"
+        android:layout_marginTop="24dp"/>
+
+    <TextView
+        android:id="@+id/resultText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center"
+        android:text="0"
+        android:textFontWeight="700"
+        android:textSize="24dp"/>
+
+</LinearLayout>
